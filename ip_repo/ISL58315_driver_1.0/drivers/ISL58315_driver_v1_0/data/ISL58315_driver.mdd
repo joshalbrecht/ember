@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER ISL58315_driver
+	OPTION supported_peripherals = (ISL58315_driver);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = ISL58315_driver;
+END DRIVER
