@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:ISL58315_driver:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 (* X_CORE_INFO = "ISL58315_driver_v1_0,Vivado 2014.1" *)
 (* CHECK_LICENSE_TYPE = "system_ISL58315_driver_0_0,ISL58315_driver_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "system_ISL58315_driver_0_0,ISL58315_driver_v1_0,{x_ipProduct=Vivado 2014.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ISL58315_driver,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
+(* CORE_GENERATION_INFO = "system_ISL58315_driver_0_0,ISL58315_driver_v1_0,{x_ipProduct=Vivado 2014.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ISL58315_driver,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_ISL58315_driver_0_0 (
   clk100_i,

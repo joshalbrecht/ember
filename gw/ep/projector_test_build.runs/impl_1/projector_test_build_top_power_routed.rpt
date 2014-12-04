@@ -1,0 +1,277 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
+| Date             : Tue Nov 25 07:19:32 2014
+| Host             : embyr running 64-bit major release  (build 9200)
+| Command          : report_power -file projector_test_build_top_power_routed.rpt -pb projector_test_build_top_power_summary_routed.pb
+| Design           : projector_test_build_top
+| Device           : xc7k325tffg900-2
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 0.373  |
+| Dynamic (W)              | 0.212  |
+| Device Static (W)        | 0.161  |
+| Effective TJA (C/W)      | 1.8    |
+| Max Ambient (C)          | 84.3   |
+| Junction Temperature (C) | 25.7   |
+| Confidence Level         | Medium |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.032 |        5 |       --- |             --- |
+| Slice Logic              |     0.003 |    12809 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     5737 |    203800 |            2.81 |
+|   Register               |    <0.001 |     5059 |    407600 |            1.24 |
+|   LUT as Distributed RAM |    <0.001 |      152 |     64000 |            0.23 |
+|   LUT as Shift Register  |    <0.001 |      231 |     64000 |            0.36 |
+|   CARRY4                 |    <0.001 |      192 |     50950 |            0.37 |
+|   F7/F8 Muxes            |    <0.001 |      265 |    203800 |            0.13 |
+|   Others                 |     0.000 |      158 |       --- |             --- |
+| Signals                  |     0.003 |     9385 |       --- |             --- |
+| Block RAM                |     0.064 |       27 |       445 |            6.06 |
+| MMCM                     |     0.107 |        1 |        10 |           10.00 |
+| DSPs                     |    <0.001 |        6 |       840 |            0.71 |
+| I/O                      |     0.004 |        3 |       500 |            0.60 |
+| Static Power             |     0.161 |          |           |                 |
+| Total                    |     0.373 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.167 |       0.098 |      0.069 |
+| Vccaux    |       1.800 |     0.089 |       0.061 |      0.028 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.006 |       0.005 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is completely routed                            |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 25% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Medium     |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------------------+-----------------------------------------------------+-----------------+
+| Clock                                     | Domain                                              | Constraint (ns) |
++-------------------------------------------+-----------------------------------------------------+-----------------+
+| system_i/mdm_1/U0/Use_E2.BSCANE2_I/UPDATE | system_i/mdm_1/U0/Ext_JTAG_UPDATE__0                |            33.3 |
+| sys_diff_clock_clk_p                      | sys_diff_clock_clk_p                                |             5.0 |
+| system_i/mdm_1/U0/Use_E2.BSCANE2_I/DRCK   | system_i/mdm_1/U0/DRCK                              |            33.3 |
+| clkfbout_system_clk_wiz_1_0               | system_i/clk_wiz_1/inst/clkfbout_system_clk_wiz_1_0 |             5.0 |
+| clk_out1_system_clk_wiz_1_0               | system_i/clk_wiz_1/inst/clk_out1_system_clk_wiz_1_0 |            10.0 |
++-------------------------------------------+-----------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                                                  | Power (W) |
++---------------------------------------------------------------------------------------------------------------------------------------+-----------+
+| projector_test_build_top                                                                                                              |     0.212 |
+|   system_i                                                                                                                            |     0.212 |
+|     ISL58315_driver_0                                                                                                                 |     0.006 |
+|     clk_wiz_1                                                                                                                         |     0.113 |
+|       inst                                                                                                                            |     0.113 |
+|     mdm_1                                                                                                                             |     0.002 |
+|       U0                                                                                                                              |     0.002 |
+|     microblaze_0                                                                                                                      |     0.085 |
+|       U0                                                                                                                              |     0.085 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[10].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[11].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[12].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[13].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[14].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[15].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[16].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[17].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[18].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[19].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[1].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[20].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[21].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[22].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[23].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[24].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[25].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[26].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[27].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[28].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[29].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[2].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[30].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[31].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5 |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[3].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[4].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[5].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[6].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[7].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[8].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/ALU_I/FPGA_Target.ALL_Bits[9].ALU_Bit_I1/Using_FPGA_LUT6.Not_Last_Bit.I_ALU_LUT_V5  |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I                                                                     |    <0.001 |
+|           Using_LUT6.All_RAM32M[0].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[10].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[11].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[12].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[13].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[14].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[15].ram32m_i                                                                                          |    <0.001 |
+|           Using_LUT6.All_RAM32M[1].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[2].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[3].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[4].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[5].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[6].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[7].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[8].ram32m_i                                                                                           |    <0.001 |
+|           Using_LUT6.All_RAM32M[9].ram32m_i                                                                                           |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[0].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[10].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[11].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[12].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[13].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[14].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[15].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[16].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[17].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[18].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[19].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[1].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[20].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[21].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[22].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[23].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[24].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[25].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[26].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[27].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[28].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[29].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[2].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[30].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[31].I_RET_ADDR_WB   |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[3].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[4].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[5].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[6].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[7].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[8].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Data_Flow_I/exception_registers_I1/FPGA_Target.Using_FPGA_LUT6.Gen_Ret_Addr[9].I_RET_ADDR_WB    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_0_2                      |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_12_14                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_15_17                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_18_20                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_21_23                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_24_26                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_27_29                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_30_31                    |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_3_5                      |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_6_8                      |    <0.001 |
+|         MicroBlaze_Core_I/Performance.Using_ICache.ICache_I1/Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_9_11                     |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_0_2                                                                           |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_12_14                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_15_17                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_18_20                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_21_23                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_24_26                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_27_29                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_30_31                                                                         |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_3_5                                                                           |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_6_8                                                                           |    <0.001 |
+|         Using_Victim_Cache.victim_cache_I1/RAM_reg_0_63_9_11                                                                          |    <0.001 |
+|     microblaze_0_axi_periph                                                                                                           |     0.006 |
+|       s01_couplers/auto_pc                                                                                                            |     0.003 |
+|       s02_couplers/auto_pc                                                                                                            |     0.002 |
+|       xbar                                                                                                                            |    <0.001 |
+|     microblaze_0_local_memory                                                                                                         |    <0.001 |
+|       dlmb_bram_if_cntlr                                                                                                              |    <0.001 |
+|       dlmb_v10                                                                                                                        |     0.000 |
+|         U0                                                                                                                            |     0.000 |
+|       ilmb_bram_if_cntlr                                                                                                              |    <0.001 |
+|       ilmb_v10                                                                                                                        |     0.000 |
+|         U0                                                                                                                            |     0.000 |
+|       lmb_bram                                                                                                                        |    <0.001 |
+|     rst_clk_wiz_1_100M                                                                                                                |    <0.001 |
++---------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
+

@@ -1,0 +1,113 @@
+21:08:52 INFO  : Processing command line option -hwspec C:/fpga_ember/fpga_co/gw/ep/hw/system.xml.
+21:09:31 INFO  : No changes in MSS file content so not generating sources.
+21:13:26 INFO  : FPGA configured successfully with bitstream "C:/fpga_ember/fpga_co/gw/ep/projector_test_build.runs/impl_1/projector_test_build_top.bit"
+18:37:02 INFO  : No changes in MSS file content so not generating sources.
+18:37:32 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: 
+    Failed to claim JTAG Device 1 for debug. Check if it's
+    in use by other client for debug
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(TM.java:546)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:347)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:601)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:253)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+18:38:57 INFO  : FPGA configured successfully with bitstream "C:/fpga_ember/fpga_co/gw/ep/projector_test_build.runs/impl_1/projector_test_build_top.bit"
+18:39:35 INFO  : Processor reset is completed for microblaze_0
+18:40:31 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:40:36 INFO  : Processor reset is completed for microblaze_0
+18:43:13 INFO  : microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching.
+18:43:18 INFO  : Processor reset is completed for microblaze_0
+07:00:42 INFO  : Processor reset is completed for microblaze_0
+07:02:04 INFO  : Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup
+07:02:04 ERROR : Timeout occured while waiting to get reply for command "targets 0"
+07:12:01 INFO  : Processor reset is completed for microblaze_0
+10:24:46 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+12:12:10 INFO  : FPGA configured successfully with bitstream "C:/fpga_ember/fpga_co/gw/ep/projector_test_build.runs/impl_1/projector_test_build_top.bit"
+12:12:28 INFO  : Processor reset is completed for microblaze_0
+12:16:24 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+12:26:52 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:26:52 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:379)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:296)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:244)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+12:26:59 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:27:20 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:27:36 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:28:50 INFO  : FPGA configured successfully with bitstream "C:/fpga_ember/fpga_co/gw/ep/projector_test_build.runs/impl_1/projector_test_build_top.bit"
+12:29:12 ERROR : FPGA Configuration failed.Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+12:35:54 INFO  : FPGA configured successfully with bitstream "C:/fpga_ember/fpga_co/gw/ep/projector_test_build.runs/impl_1/projector_test_build_top.bit"
+12:36:38 INFO  : Processor reset is completed for microblaze_0
+13:26:55 ERROR : Unable to disconnect from existing targets
+java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(XMDJSONProcess.java:140)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(TM.java:324)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:313)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:206)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:57)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:199)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+13:26:55 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

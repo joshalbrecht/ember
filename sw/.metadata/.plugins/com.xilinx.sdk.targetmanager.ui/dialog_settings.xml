@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\fpga_ember\fpga_co\gw\ep\projector_test_build.runs\impl_1\projector_test_build_top_bd.bmm" key="hw_platform_0-bmmFile"/>
+	<item value="C:\fpga_ember\fpga_co\gw\ep\projector_test_build.runs\impl_1\projector_test_build_top.bit" key="hw_platform_0-bitFile"/>
+	<item value="false" key="hw_platform_0-runResetZynq"/>
+	<item value="C:\fpga_ember\fpga_co\sw\projector_app\Debug\projector_app.elf" key="hw_platform_0-microblaze_0-initElf"/>
+	<item value="Local" key="hw_platform_0-target"/>
+</section>

@@ -41,7 +41,7 @@ levelinfo -pg 1 120 390 840 1210 1590 1800
 ",
 }
 {
-   da_axi4_cnt: "3",
-   da_board_cnt: "3",
+   da_axi4_cnt: "4",
+   da_board_cnt: "4",
    da_mb_cnt: "1",
 }

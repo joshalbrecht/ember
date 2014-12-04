@@ -1,0 +1,634 @@
+21:09:31 **** Build of project projector_bsp_0 ****
+make -k all 
+cp -f microblaze_0/lib/libxil_init.a microblaze_0/lib/libxil.a
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling ISL58315_driver..."
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+21:09:57 **** Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2050	    268	   2090	   4408	   1138	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+21:10:19 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:15:39 **** Clean-only build of configuration Debug for project projector_app ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  projector_app.elf.size  projector_app.elf
+' '
+21:15:40 **** Clean-only build of project projector_bsp_0 ****
+make -k clean 
+rm -f microblaze_0/lib/libxil.a
+21:15:40 **** Build of project projector_bsp_0 ****
+make -k all 
+cp -f microblaze_0/lib/libxil_init.a microblaze_0/lib/libxil.a
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling ISL58315_driver..."
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+21:15:43 **** Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2050	    268	   2090	   4408	   1138	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+21:16:46 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:17:06 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:17:46 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:19:21 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:23:02 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:27:21 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2050	    268	   2090	   4408	   1138	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+21:27:24 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:29:02 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5046	    272	   2080	   7398	   1ce6	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+21:29:04 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:29:09 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:31:16 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5054	    272	   2080	   7406	   1cee	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+21:31:17 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+21:40:32 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:42:5: error: unknown type name 'u8'
+     u8 inbyte;
+     ^
+../src/helloworld.c:45:20: error: called object 'inbyte' is not a function or function pointer
+     inbyte = inbyte();
+                    ^
+../src/helloworld.c:42:8: note: declared here
+     u8 inbyte;
+        ^
+make: *** [src/helloworld.o] Error 1
+22:00:46 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+../src/helloworld.c:42:9: warning: variable 'choice' set but not used [-Wunused-but-set-variable]
+     int choice;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5194	    272	   2086	   7552	   1d80	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:02:18 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:44: error: 'inbyte' undeclared (first use in this function)
+     xil_printf("\n\r You put in a %d \n\r",inbyte);
+                                            ^
+../src/helloworld.c:47:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:42:9: warning: unused variable 'choice' [-Wunused-variable]
+     int choice;
+         ^
+make: *** [src/helloworld.o] Error 1
+22:02:33 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:15: warning: 'choice' is used uninitialized in this function [-Wuninitialized]
+     xil_printf("\n\r You put in a %d \n\r",choice);
+               ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5102	    272	   2080	   7454	   1d1e	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:02:40 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5190	    272	   2080	   7542	   1d76	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:02:43 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+22:03:40 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5106	    272	   2086	   7464	   1d28	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:06:05 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+22:06:33 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+22:08:28 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5194	    272	   2086	   7552	   1d80	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:08:31 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+22:08:44 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5198	    272	   2080	   7550	   1d7e	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:09:43 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5198	    272	   2080	   7550	   1d7e	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+22:10:42 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:45:5: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+     choice = inbyte();
+     ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5194	    272	   2086	   7552	   1d80	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+18:36:18 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+18:37:02 **** Auto Build of project projector_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling ISL58315_driver..."
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+18:37:05 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+18:37:32 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+18:39:28 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+18:40:30 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+18:43:12 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+06:59:08 **** Clean-only build of configuration Debug for project projector_app ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  projector_app.elf.size  projector_app.elf
+' '
+06:59:08 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/projector_app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app.d" -MT"src/projector_app.d" -o "src/projector_app.o" "../src/projector_app.c"
+../src/projector_app.c: In function 'projector_appsrcprojector_app_run_loop':
+../src/projector_app.c:33:4: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+    choice = inbyte();
+    ^
+'Finished building: ../src/projector_app.c'
+' '
+'Building file: ../src/projector_app_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app_main.d" -MT"src/projector_app_main.d" -o "src/projector_app_main.o" "../src/projector_app_main.c"
+'Finished building: ../src/projector_app_main.c'
+' '
+'Building file: ../src/projector_app_run_loop.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app_run_loop.d" -MT"src/projector_app_run_loop.d" -o "src/projector_app_run_loop.o" "../src/projector_app_run_loop.c"
+'Finished building: ../src/projector_app_run_loop.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/platform.o ./src/projector_app.o ./src/projector_app_main.o ./src/projector_app_run_loop.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/projector_app_main.o: In function `main':
+C:\fpga_ember\fpga_co\sw\projector_app\Debug/../src/projector_app_main.c:22: undefined reference to `projector_app_run_loop'
+collect2.exe: error: ld returned 1 exit status
+make: *** [projector_app.elf] Error 1
+06:59:32 **** Clean-only build of configuration Debug for project projector_app ****
+make clean 
+rm -rf  ./src/platform.o ./src/projector_app.o ./src/projector_app_main.o ./src/projector_app_run_loop.o  ./src/platform.d ./src/projector_app.d ./src/projector_app_main.d ./src/projector_app_run_loop.d  projector_app.elf.size  projector_app.elf
+' '
+06:59:32 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/projector_app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app.d" -MT"src/projector_app.d" -o "src/projector_app.o" "../src/projector_app.c"
+../src/projector_app.c: In function 'projector_appsrcprojector_app_run_loop':
+../src/projector_app.c:33:4: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+    choice = inbyte();
+    ^
+'Finished building: ../src/projector_app.c'
+' '
+'Building file: ../src/projector_app_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app_main.d" -MT"src/projector_app_main.d" -o "src/projector_app_main.o" "../src/projector_app_main.c"
+'Finished building: ../src/projector_app_main.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/platform.o ./src/projector_app.o ./src/projector_app_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/projector_app_main.o: In function `main':
+C:\fpga_ember\fpga_co\sw\projector_app\Debug/../src/projector_app_main.c:22: undefined reference to `projector_app_run_loop'
+collect2.exe: error: ld returned 1 exit status
+make: *** [projector_app.elf] Error 1
+06:59:52 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/projector_app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app.d" -MT"src/projector_app.d" -o "src/projector_app.o" "../src/projector_app.c"
+../src/projector_app.c: In function 'projector_app_run_loop':
+../src/projector_app.c:33:4: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+    choice = inbyte();
+    ^
+'Finished building: ../src/projector_app.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/platform.o ./src/projector_app.o ./src/projector_app_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5186	    272	   2086	   7544	   1d78	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+07:00:42 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+07:11:49 **** Auto Build of configuration Debug for project projector_app ****
+make all 
+'Building file: ../src/projector_app.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../projector_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/projector_app.d" -MT"src/projector_app.d" -o "src/projector_app.o" "../src/projector_app.c"
+../src/projector_app.c: In function 'projector_app_run_loop':
+../src/projector_app.c:33:6: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+      choice = inbyte();
+      ^
+'Finished building: ../src/projector_app.c'
+' '
+'Building target: projector_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../projector_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v9.3 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "projector_app.elf"  ./src/platform.o ./src/projector_app.o ./src/projector_app_main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: projector_app.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size projector_app.elf  |tee "projector_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5314	    272	   2086	   7672	   1df8	projector_app.elf
+'Finished building: projector_app.elf.size'
+' '
+07:12:00 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+12:12:21 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+12:12:26 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+12:26:50 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+12:36:36 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,6 @@
+12:36:36 **** Incremental Build of configuration Debug for project projector_app ****
+make all 
+make: Nothing to be done for `all'.
+
+12:36:37 Build Finished (took 141ms)
+

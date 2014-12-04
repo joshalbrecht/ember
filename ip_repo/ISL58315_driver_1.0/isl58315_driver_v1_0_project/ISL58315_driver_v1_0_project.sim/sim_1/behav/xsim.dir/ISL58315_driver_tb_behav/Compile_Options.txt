@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "ISL58315_driver_tb_behav" --prj "c:/fpga_ember/fpga_co/ip_repo/isl58315_driver_1.0/isl58315_driver_v1_0_project/ISL58315_driver_v1_0_project.sim/sim_1/behav/ISL58315_driver_tb.prj" "xil_defaultlib.ISL58315_driver_tb" "xil_defaultlib.glbl" 

@@ -1,0 +1,46 @@
+18:37:02 **** Auto Build of project projector_bsp_0 ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make include in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+cp -rf profile.h mblaze_nt_types.h _profile_timer_hw.h ../../../../include
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/standalone_v4_0/src/profile'
+"Running Make include in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s include -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Running Make libs in microblaze_0/libsrc/bram_v4_0/src"
+make -C microblaze_0/libsrc/bram_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling bram"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/bram_v4_0/src'
+"Running Make libs in microblaze_0/libsrc/cpu_v2_0/src"
+make -C microblaze_0/libsrc/cpu_v2_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling cpu"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/cpu_v2_0/src'
+"Running Make libs in microblaze_0/libsrc/isl58315_driver_v1_0/src"
+make -C microblaze_0/libsrc/isl58315_driver_v1_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling ISL58315_driver..."
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+rm -rf *.o
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/isl58315_driver_v1_0/src'
+"Running Make libs in microblaze_0/libsrc/standalone_v4_0/src"
+make -C microblaze_0/libsrc/standalone_v4_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_0/src"
+make -C microblaze_0/libsrc/uartlite_v3_0/src -s libs -e "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.3 -mhard-float -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-float-convert -mxl-float-sqrt -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"
+"Compiling uartlite"
+make[2]: Entering directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+rm -rf *.o 
+make[2]: Leaving directory `C:/fpga_ember/fpga_co/sw/projector_bsp_0/microblaze_0/libsrc/uartlite_v3_0/src'
+'Finished building libraries'
+
+18:37:05 Build Finished (took 2s.546ms)
+

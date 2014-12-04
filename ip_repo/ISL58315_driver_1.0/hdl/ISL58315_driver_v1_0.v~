@@ -16,7 +16,7 @@
 	(
 		// Users to add ports here
                 input          clk100_i,
-                input          logic_async_rst_i
+                input          logic_async_rst_i,
 
                 output [14:00] isl58x_D,
                 output         isl58x_CLK,
@@ -55,12 +55,33 @@
         /*************************
 	*Wires and register
         **************************/
-        wire [1:0] isl58x_DATA_MODE;
+        wire [31:00] isl58x_CNTRL_REG_0;
+        wire [01:00] isl58x_DATA_MODE;
+	wire [00:00] rgb_gen_en;
+
+	wire [04:00] r_data;
+	wire [04:00] g_data;
+	wire [04:00] b_data;
+	wire         rgb_data_val;
 
         /*************************
 	*Assign Statements
         **************************/
-        assign isl58x_DATA_MOD = isl58x_CNTRL_REG_0i[1:0];
+        assign isl58x_DATA_MOD = isl58x_CNTRL_REG_0[1:0];
+
+	rgb_data_gen rgb_data_gen_i
+	(
+
+            .clk_i       (clk100_i),
+            .async_rst_i (logic_async_rst_i),
+            .ce_i        (rgb_gen_en),
+
+            .R_OUT       (r_data),
+            .G_OUT       (g_data),
+            .B_OUT       (b_data),
+
+            .data_val_o   (rgb_data_val)
+	);
 
         ISL58315_IPD_intfc ISL58315_IPD_intfc_i
         (
@@ -72,8 +93,13 @@
            .isl58x_RTZ (isl58x_RTZ ),
            .isl58x_LOWP(isl58x_LOWP),
            .isl58x_CE  (isl58x_CE  ),
+
+	   .R_IN       (r_data),
+	   .G_IN       (g_data),
+	   .B_IN       (b_data),
+	   .RGB_VAL    (rgb_data_val),
         
-           .isl58x_DATA_MODE (),
+           .isl58x_DATA_MODE (isl58x_DATA_MODE)
         );
 	// User logic ends
 
@@ -85,6 +111,9 @@
 		.C_S_AXI_DATA_WIDTH(C_S00_AXI_DATA_WIDTH),
 		.C_S_AXI_ADDR_WIDTH(C_S00_AXI_ADDR_WIDTH)
 	) ISL58315_driver_v1_0_S00_AXI_inst (
+		//USER PORTS START
+		.isl58x_CNTRL_REG_0(isl58x_CNTRL_REG_0),
+        //USER PORTS END
 		.S_AXI_ACLK(s00_axi_aclk),
 		.S_AXI_ARESETN(s00_axi_aresetn),
 		.S_AXI_AWADDR(s00_axi_awaddr),
